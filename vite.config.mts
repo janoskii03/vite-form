@@ -11,7 +11,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:'vite-form',
+  base:'/vite-form/',
   plugins: [
     VueRouter(),
     Vue({

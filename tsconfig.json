@@ -3,19 +3,24 @@
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "bundler", 
     "resolveJsonModule": true,
     "strict": true,
     "jsx": "preserve",
     "module": "ESNext",
     "target": "ESNext",
     "lib": ["esnext", "dom"],
-    "types": ["vite/client"]
+    "types": ["vite/client", "unplugin-vue-router"], 
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
-    "src/**/*.vue"
+    "src/**/*.vue",
+    "src/typed-router.d.ts"
   ]
 }

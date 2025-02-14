@@ -13,7 +13,9 @@ import { fileURLToPath, URL } from 'node:url'
 export default defineConfig({
   base:'/vite-form/',
   plugins: [
-    VueRouter(),
+     VueRouter({
+      dts: 'src/typed-router.d.ts',  
+    }),
     Vue({
       template: { transformAssetUrls },
     }),
